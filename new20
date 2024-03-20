@@ -1,1 +1,16 @@
  hello guys
+pipeline{
+agent any
+stages{
+stage('build'){
+steps {
+echo "this is testing of jenkins"
+}
+}
+stage('test'){
+steps{
+echo "test completed"
+}
+}
+}
+}
